@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "nombre": "Frankenstein",
+    "precio": 1000,
+    "img": "img/frankenstein.jpg"
+  },
+  {
+    "id": "2",
+    "nombre": "Little Women",
+    "precio": 1000,
+    "img": "img/littlewomen.jpg"
+  },
+  {
+    "id": "3",
+    "nombre": "Persuasion",
+    "precio": 1000,
+    "img": "img/persuasion.jpg"
+  },
+  {
+    "id": "4",
+    "nombre": "Jane Eyre",
+    "precio": 1000,
+    "img": "img/janeeyre.jpg"
+  },
+  {
+    "id": "5",
+    "nombre": "Wuthering Heights",
+    "precio": 1000,
+    "img": "img/wutheringheights.jpg"
+  }
+]

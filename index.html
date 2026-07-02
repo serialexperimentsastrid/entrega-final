@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=IM+Fell+English:ital@0;1&family=Jersey+10&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="div-logo">
+  <a class="logo" href="./index.html">
+    <img src="img/logopagina1.png" alt="Logo">
+  </a>
+</div>
+
+<form class="header-search" action="/buscar" method="GET">
+    <input type="text" name="q" placeholder="Buscar libros..." aria-label="Buscar">
+    <button type="submit">
+      <img src="./img/lupa.png" alt="Buscar"> 
+    </button>
+  </form>
+
+      <nav class="header-nav">
+        <ul>
+          <li> <a href="./index.html">Inicio</a> </li>
+          <li> <a href="./pages/contacto.html">Contacto</a> </li>
+          <li>
+            <a href="./pages/carrito.html" class="carrito-icono"
+              >🛒<span id="contador-carrito">0</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 class="titulo-home text-secondary">¡Bienvenido a la tienda!</h1>
+      <p class="parrafo">
+        Aquí podrás encontrar libros en inglés y español, para niños y adultos, de todos los géneros y niveles.
+        Por pedidos o consultas, no dudes en contactarnos.
+      </p>
+
+      <section>
+        <h2 class="titulo-productos">Nuestros productos</h2>
+        <!--👉 Agregar un ID al div, ahora lo necesitamos -->
+        <div id="contenedor-tarjetas" class="contenedor-tarjetas">
+          <!-- Tarjetas -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Sitio realizado por Astrid Mancuso</p>
+      <nav>
+        <ul class="footer-list">
+          <li><img src="./img/whatsapp.png" alt="logo de whatsapp" /></li>
+          <li><img src="./img/insta.png" alt="logo de instagram" /></li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

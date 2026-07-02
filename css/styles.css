@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "EB Garamond", serif;
+  font-size: 1.6rem;
+  background: #a4bf94;
+  color: #2a1e35;
+
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2rem;
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 3rem 0;
+}
+
+h2 {
+  color: #2a1e35;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.btn {
+  border: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+header,
+footer {
+  background: #859b78;
+  color: #2a1e35;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 1. Limitamos el tamaño de la imagen de la lupa */
+.header-search button img {
+    width: 20px;   /* Un tamaño pequeño y discreto */
+    height: 20px;  /* Mantenemos la proporción */
+    display: block; /* Evita espacios extraños abajo de la imagen */
+}
+
+/* 2. Aseguramos que el botón no tenga márgenes raros */
+.header-search button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 5px; /* Espacio entre el texto y la lupa */
+    display: flex;
+    align-items: center;
+}
+
+/* 3. El contenedor debe tener una altura máxima coherente */
+.header-search {
+    display: flex;
+    align-items: center;
+    background: #a4bf94;
+    border-radius: 2rem;
+    padding: 0.5rem 1.2rem;
+    height: 40px; /* Forzamos una altura fija para que no crezca */
+    width: 35%;
+    max-width: 450px;
+}
+
+.div-logo {
+  margin-left: 2rem;
+  font-weight: bold;
+}
+
+.logo,
+.header-nav ul li a {
+  text-decoration: none;
+  font-size: 3rem;
+  color: inherit;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.header-nav ul,
+footer .footer-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-list li {
+  padding: 1rem;
+}
+
+.footer-list img {
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   COLORES                                  */
+/* -------------------------------------------------------------------------- */
+.bg-primary {
+  background-color: #a4bf94;
+}
+
+.bg-secondary {
+  background-color: #6e527c;
+}
+
+.text-light {
+  color: #000000;
+}
+
+.text-dark {
+  color: #2a1e35;
+}
+
+.text-secondary {
+  color: #2c3928;
+}
+
+.btn-eliminar-carrito {
+  background-color: #6e527c;
+  border: 2px solid #6e527c;
+}
+.btn-vaciar-carrito {
+  background-color: #6e527c;
+  color: #1d1a20;
+}
+.btn-vaciar-carrito:hover {
+  background-color: #6e527c;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HOME                                    */
+/* -------------------------------------------------------------------------- */
+
+.parrafo {
+  width: 80%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.contenedor-tarjetas {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #948b9b;
+  color: #2a1e35;
+  width: 30rem;
+
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  CONTACTO                                  */
+/* -------------------------------------------------------------------------- */
+.titulo-contacto {
+  margin: 2rem 0;
+}
+
+.form-contacto {
+  background-color: #948b9b;
+  color: #2a1e35;
+  width: 100%;
+  max-width: 50rem;
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* sutil */
+}
+
+.grupo-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.grupo-input input,
+.grupo-input textarea {
+  border: none;
+  background-color: transparent;
+  border-bottom: solid 2px #2a1e35;
+  margin-bottom: 3rem;
+}
+
+.grupo-input textarea {
+  min-height: 10rem;
+  resize: vertical;
+}
+
+/* ------------------------------------------------------------------------ */
+/*                              CARRITO                                     */
+/* ------------------------------------------------------------------------ */
+.mensaje-carrito-vacio {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.acciones-carrito {
+  margin-top: 2rem;
+}
+
+/* ------------------------------------------------------------------------ */
+/*                                MEDIA QUERIES                             */
+  /* ---------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  header,
+  footer {
+    flex-direction: column; 
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  .header-search {
+    width: 90%; 
+    order: 2;  
+  }
+}
